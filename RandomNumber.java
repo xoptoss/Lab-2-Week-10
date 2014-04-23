@@ -13,25 +13,25 @@ public class RandomNumber {
 		return answer;
 	}
 
-	public int GetANumber(int high)
+	public int GetANumber(int newHigh)
 	{
-		answer = random.nextInt(high)+1;
+		answer = random.nextInt(newHigh)+1;
 		return answer;
 	}
 
-	public int GetANumber(int high, int low)
+	public int GetANumber(int newHigh, int newLow)
 	{
-		answer = random.nextInt(high-low)+low;
+		answer = random.nextInt(newHigh-newLow)+newLow;
 		return answer;
 	}
 	public int SetLowNumber(int low)
 	{
 		newLow = low;
-		return low;
+		return newLow;
 	}
 	public int SetHighNumber(int high)
 	{
-		newHigh = high;
-		return high;
+		high = newHigh;
+		return newHigh;
 	}
 }
